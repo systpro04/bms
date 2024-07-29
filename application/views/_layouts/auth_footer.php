@@ -5,9 +5,9 @@
 		<script src="<?php echo base_url();?>assets/plugins/bootstrap/js/bootstrap.js"></script>
 		<!-- Ionicons js -->
 		<script src="<?php echo base_url();?>assets/plugins/ionicons/ionicons.js"></script>
-		<!-- P-scroll js Remove in final -->
+		<!-- P-scroll js Remove in final
 		<script src="<?php echo base_url();?>assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-		<script src="<?php echo base_url();?>assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+		<script src="<?php echo base_url();?>assets/plugins/perfect-scrollbar/p-scroll.js"></script> -->
 		<!-- eva-icons js -->
 		<script src="<?php echo base_url();?>assets/js/eva-icons.min.js"></script>
 		<!-- Rating js-->

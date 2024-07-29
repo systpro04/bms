@@ -8,9 +8,13 @@
 		<a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
 		<!-- JQuery min js -->
 		<script src="<?php echo base_url();?>assets/plugins/jquery/jquery.min.js"></script>
+		<!-- custom js -->
+		<script src="<?php echo base_url();?>assets/js/modal.js"></script>
 		<!-- Bootstrap js -->
 		<script src="<?php echo base_url();?>assets/plugins/bootstrap/js/popper.min.js"></script>
 		<script src="<?php echo base_url();?>assets/plugins/bootstrap/js/bootstrap.js"></script>
+		<script src="<?php echo base_url();?>assets/js/sweetalert2.js"></script>
+
 		<!-- Ionicons js -->
 		<script src="<?php echo base_url();?>assets/plugins/ionicons/ionicons.js"></script>
 		<!-- Moment js -->
@@ -51,9 +55,12 @@
 		<script src="<?php echo base_url();?>assets/js/table-data.js"></script>
 		<!-- Horizontalmenu js-->
 		<script src="<?php echo base_url();?>assets/plugins/horizontal-menu/horizontal-menu-2/horizontal-menu.js"></script>
-		<!-- custom js -->
+		<!-- Internal Select2 js-->
+		<script src="<?php echo base_url();?>assets/plugins/select2/js/select2.min.js"></script>
 		<script src="<?php echo base_url();?>assets/js/custom.js"></script>
 		<!-- Switcher js -->
 		<script src="<?php echo base_url();?>assets/switcher/js/switcher.js"></script>
+		<!--Internal  Sweet-Alert js-->
+
 	</body>
 </html>

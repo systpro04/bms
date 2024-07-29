@@ -13,13 +13,13 @@
         <div class="card overflow-hidden sales-card bg-primary-gradient">
             <div class="pl-3 pt-3 pr-3 pb-2 pt-0">
                 <div class="">
-                    <h6 class="mb-3 tx-12 text-white">TODAY ORDERS</h6>
+                    <h6 class="mb-3 tx-12 text-white">USERS</h6>
                 </div>
                 <div class="pb-0 mt-0">
                     <div class="d-flex">
                         <div class="">
                             <h4 class="tx-20 font-weight-bold mb-1 text-white">
-                                0
+                                <?php echo $user_count; ?>
                             </h4>
                             <p class="mb-0 tx-12 text-white op-7">
                                 Compared to last week
