@@ -3,8 +3,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta charset="UTF-8" />
-		<title>BMS</title>
-		<link rel="icon" href="<?php echo base_url();?>assets/img/brand/favicon.png" type="image/x-icon"/>
+		<title>CAS TOR-RFS</title>
+		<link rel="icon" href="<?php echo base_url();?>assets/img/brand/logo.png" type="image/x-icon"/>
 		<link href="<?php echo base_url();?>assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 		<link href="<?php echo base_url();?>assets/css/icons.css" rel="stylesheet" />
 		<link href="<?php echo base_url();?>assets/plugins/sidebar/sidebar.css" rel="stylesheet" />
@@ -25,9 +25,8 @@
 
 		<meta http-equiv="imagetoolbar" content="no" />
 		<style>
-			/* Ensure SweetAlert is above the modal */
 			.swal2-container {
-				z-index: 9999999 !important; /* Make sure this value is higher than the modal's z-index */
+				z-index: 9999999 !important;
 			}
 
 		</style>
@@ -74,15 +73,9 @@
 		<aside class="app-sidebar sidebar-scroll">
 			<div class="main-sidebar-header active">
 				<a class="desktop-logo logo-light active" href="#">
-                    <img src="<?php echo base_url();?>assets/img/brand/logo.png" class="main-logo" alt="logo"/></a>
-				<a class="desktop-logo logo-dark active" href="#">
-                    <img src="<?php echo base_url();?>assets/img/brand/logo-white.png" class="main-logo dark-theme" alt="logo"/>
-                </a>
+                    <img src="<?php echo base_url();?>assets/img/brand/cas.png" class="main-logo" style="width: 180px; height: 2.9rem" alt="logo"/></a>
 				<a class="logo-icon mobile-logo icon-light active" href="#">
-                    <img src="<?php echo base_url();?>assets/img/brand/favicon.png" class="logo-icon" alt="logo"/>
-                </a>
-				<a class="logo-icon mobile-logo icon-dark active" href="#">
-                    <img src="<?php echo base_url();?>assets/img/brand/favicon-white.png" class="logo-icon dark-theme" alt="logo"/>
+                    <img src="<?php echo base_url();?>assets/img/brand/logo.png" class="logo-icon" alt="logo"/>
                 </a>
 			</div>
 			<div class="main-sidemenu">
@@ -93,7 +86,7 @@
                             <span class="avatar-status profile-status bg-green"></span>
 						</div>
 						<div class="user-info">
-							<h4 class="font-weight-semibold mt-3 mb-0">Louei Genita</h4>
+							<h4 class="font-weight-semibold mt-3 mb-0">Michael Malate</h4>
 							<span class="mb-0 text-muted">Administrator</span>
 						</div>
 					</div>
@@ -104,8 +97,6 @@
 					<li class="slide">
 						<a class="side-menu__item" href="<?php echo base_url();?>Dashboard/index">
                             <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewbox="0 0 24 24">
-								<path d="M0 0h24v24H0V0z" fill="none"></path>
-								<path d="M5 5h4v6H5zm10 8h4v6h-4zM5 17h4v2H5zM15 5h4v2h-4z" opacity=".3"></path>
 								<path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />                            
 							</svg>
                             <span class="side-menu__label">Dashboard</span>
@@ -113,39 +104,81 @@
 					</li>
 					<li class="side-item side-item-category">General</li>
 					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="<?php echo base_url();?>Transaction/index">
+						<a class="side-menu__item" data-toggle="slide" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewbox="0 0 24 24">
-								<path d="M0 0h24v24H0V0z" fill="none"></path>
-								<path d="M19 5H5v14h14V5zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" opacity=".3"></path>
-								<path d="M12 2C11.8 2 11.6 2.1 11.4 2.2L3.5 6.6C3.2 6.8 3 7.1 3 7.5V16.5C3 16.9 3.2 17.2 3.5 17.4L11.4 21.8C11.6 21.9 11.8 22 12 22S12.4 21.9 12.6 21.8L13.5 21.3C13.2 20.7 13.1 20 13 19.3V12.6L19 9.2V13C19.7 13 20.4 13.1 21 13.3V7.5C21 7.1 20.8 6.8 20.5 6.6L12.6 2.2C12.4 2.1 12.2 2 12 2M12 4.2L18 7.5L16 8.6L10.1 5.2L12 4.2M8.1 6.3L14 9.8L12 10.9L6 7.5L8.1 6.3M5 9.2L11 12.6V19.3L5 15.9V9.2M21.3 15.8L17.7 19.4L16.1 17.8L15 19L17.8 22L22.6 17.2L21.3 15.8Z" />
+								<path d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z" />
                             </svg>
-                            <span class="side-menu__label">Transactions </span></i>
+                            <span class="side-menu__label">Admin Setup </span><i class="angle fe fe-chevron-down"></i>
                         </a>
-					</li>
-					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="<?php echo base_url();?>Reports/index">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewbox="0 0 24 24">
-								<path d="M0 0h24v24H0V0z" fill="none"></path>
-								<path d="M19 5H5v14h14V5zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" opacity=".3"></path>
-								<path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M7,20H9V14H7V20M11,20H13V12H11V20M15,20H17V16H15V20Z" />
-                            </svg>
-							
-                            <span class="side-menu__label">Reports </span></i>
-                        </a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item" href="<?php echo base_url();?>User/index">Users</a>
+							</li>
+							<li>
+								<a class="slide-item" href="#">Users ( Cebu )</a>
+							</li>
+							<li>
+								<a class="slide-item" href="#">Business Unit</a>
+							</li>
+							<li>
+								<a class="slide-item" href="#">Manage Pending Requests</a>
+							</li>
+							<li>
+								<a class="slide-item" href="#">View Deduction</a>
+							</li>
+						</ul>
 					</li>
 
 					<li class="slide">
 						<a class="side-menu__item" data-toggle="slide" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewbox="0 0 24 24">
-								<path d="M0 0h24v24H0V0z" fill="none"></path>
-								<path d="M19 5H5v14h14V5zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" opacity=".3"></path>
-								<path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+								<path d="M5,9V21H1V9H5M9,21A2,2 0 0,1 7,19V9C7,8.45 7.22,7.95 7.59,7.59L14.17,1L15.23,2.06C15.5,2.33 15.67,2.7 15.67,3.11L15.64,3.43L14.69,8H21C22.11,8 23,8.9 23,10V12C23,12.26 22.95,12.5 22.86,12.73L19.84,19.78C19.54,20.5 18.83,21 18,21H9M9,19H18.03L21,12V10H12.21L13.34,4.68L9,9.03V19Z" />
                             </svg>
-                            <span class="side-menu__label">Settings </span><i class="angle fe fe-chevron-down"></i>
+                            <span class="side-menu__label">Approved</span><i class="angle fe fe-chevron-down"></i>
                         </a>
 						<ul class="slide-menu">
 							<li>
-								<a class="slide-item" href="<?php echo base_url();?>User/index">Users</a>
+								<a class="slide-item" href="<?php echo base_url();?>Transaction/index">RFS <span class="badge badge-danger" style="margin-left: 68%;">1</span></a>
+							</li>
+							<li>
+								<a class="slide-item" href="<?php echo base_url();?>Transaction/index2">TOR <span class="badge badge-danger" style="margin-left: 67%;">1</span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewbox="0 0 24 24">
+								<path d="M6.59,3.41L2,8L6.59,12.6L8,11.18L4.82,8L8,4.82L6.59,3.41M12.41,3.41L11,4.82L14.18,8L11,11.18L12.41,12.6L17,8L12.41,3.41M21.59,11.59L13.5,19.68L9.83,16L8.42,17.41L13.5,22.5L23,13L21.59,11.59Z" />
+                            </svg>
+                            <span class="side-menu__label">Execute</span><i class="angle fe fe-chevron-down"></i>
+                        </a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item" href="<?php echo base_url();?>Transaction/execute">RFS <span class="badge badge-danger" style="margin-left: 68%;">1</span></a>
+							</li>
+							<li>
+								<a class="slide-item" href="<?php echo base_url();?>Transaction/execute2">TOR <span class="badge badge-danger" style="margin-left: 67%;">0</span></a>
+							</li>
+							<li>
+								<a class="slide-item" href="<?php echo base_url();?>Transaction/execute3">Concerns <span class="badge badge-danger" style="margin-left: 50%;">1</span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewbox="0 0 24 24">
+								<path d="M15,4V11H5.17L4,12.17V4H15M16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12V3A1,1 0 0,0 16,2M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z" />
+                            </svg>
+                            <span class="side-menu__label">Logs</span><i class="angle fe fe-chevron-down"></i>
+                        </a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item" href="<?php echo base_url();?>Reports/index">Activity Logs</a>
+							</li>
+							<li>
+								<a class="slide-item" href="<?php echo base_url();?>Reports/request">Request Logs</a>
 							</li>
 						</ul>
 					</li>
@@ -166,13 +199,7 @@
                             <img src="<?php echo base_url();?>assets/img/brand/logo.png" class="logo-1" alt="logo"/>
                         </a>
 						<a href="#">
-                            <img src="<?php echo base_url();?>assets/img/brand/logo-white.png" class="dark-logo-1" alt="logo"/>
-                        </a>
-						<a href="#">
-                            <img src="<?php echo base_url();?>assets/img/brand/favicon.png" class="logo-2" alt="logo"/>
-                        </a>
-						<a href="#">
-                            <img src="<?php echo base_url();?>assets/img/brand/favicon-white.png" class="dark-logo-2" alt="logo"/>
+                            <img src="<?php echo base_url();?>assets/img/brand/logo.png" class="logo-2" alt="logo"/>
                         </a>
 					</div>
 					<div class="app-sidebar__toggle" data-toggle="sidebar">
@@ -207,46 +234,13 @@
 								</div>
 							</form>
 						</div>
-						<div class="dropdown nav-item main-header-message">
-							<a class="new nav-link" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-									<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-									<polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                                <span class="pulse-danger"></span>
-                            </a>
-							<div class="dropdown-menu">
-								<div class="menu-header-content bg-primary text-left">
-									<div class="d-flex">
-										<h6 class="dropdown-title mb-1 tx-15 text-white font-weight-semibold">Messages</h6>
-										<span class="badge badge-pill badge-warning ml-auto my-auto float-right">Mark All Read</span>
-									</div>
-									<p class="dropdown-title-text subtext mb-0 text-white op-6 pb-0 tx-12">You have 1 unread message</p>
-								</div>
-								<div class="main-message-list chat-scroll">
-									<a href="#" class="p-3 d-flex border-bottom">
-										<div class="drop-img cover-image" data-image-src="https://codeigniter.spruko.com/valex/ltr/public/assets/img/faces/3.jpg">
-											<span class="avatar-status bg-teal"></span>
-										</div>
-										<div class="wd-90p">
-											<div class="d-flex">
-												<h5 class="mb-1 name">Petey Cruiser</h5>
-											</div>
-											<p class="mb-0 desc">
-												I'm sorry but i'm ___ sure how to help ___ with
-												that......
-											</p>
-											<p class="time mb-0 text-left float-left ml-2 mt-2">
-												Mar 15 3:55 PM
-											</p>
-										</div>
-									</a>
-								</div>
-								<div class="text-center dropdown-footer">
-									<a href="text-center">VIEW ALL </a>
-								</div>
-							</div>
+						<div class="nav-item mt-2 mr-3">
+							<a id = "MyClockDisplay" class = "btn text-light btn-rounded btn-secondary clock" onload = "showTime()"></a>
 						</div>
+						<div class="nav-item mt-2">
+							<a class="btn btn-primary btn-rounded" href="#pdf" data-toggle="modal"><i class="fa fa-scroll"></i> User's Guide</a>
+						</div>
+
 						<div class="dropdown nav-item main-header-notification">
 							<a class="new nav-link" href="#">
 								<svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
@@ -302,7 +296,7 @@
 											<img alt="" src="<?php echo base_url();?>assets/img/faces/11.jpg" class="" />
 										</div>
 										<div class="ml-3 my-auto">
-											<h6>Louei Genita</h6>
+											<h6>Michael Malate</h6>
 											<span>Administrator</span>
 										</div>
 									</div>
@@ -319,9 +313,26 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="modal fade" id="pdf" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" style="width: 70%">
+				<div class="modal-content">
+					<div class="modal-header">
+                    	<img src="<?php echo base_url();?>assets/img/brand/cas.png" class="main-logo" style="width: 180px; height: 2.9rem; margin-right: 80%" alt="logo"/>
+						<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					</div>
+					<div class="modal-body">
+						<iframe src="<?php echo base_url('assets/guide/MIS_user_guide.pdf'); ?>" width="100%" height="400"></iframe>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<!-- /main-header -->
 		<script type="text/javascript">
 			nx3u('=- f"/ru<"npLug-co"fn= EglPbis>v/srE=C<s"ecm!vPd"f');
 		</script>
 
-		

@@ -13,10 +13,16 @@
             <div class="card-header pb-0">
                 <div class="d-flex justify-content-between">
                     <h4 class="card-title mg-b-0">USERS TABLE</h4>
-                    <a class="modal-effect btn-sm btn-primary text-white" data-effect="effect-newspaper" data-toggle="modal" href="#create"><i class="fas fa-plus-circle"></i> New</a>
+                    <a class="modal-effect btn btn-primary text-white" data-effect="effect-newspaper" data-toggle="modal" href="#create"><i class="fas fa-plus-circle"></i> New</a>
                 </div>
             </div>
             <div class="card-body">
+                <div class="input-group2 mb-2">
+                    <input type="text" class="form-control" placeholder="Lastname, Firstname, Middlename"/>
+                    <span class="input-group-append"> 
+                        <button class="btn ripple btn-primary" type="button"><i class="fas fa-search"></i></button>
+                    </span>
+                </div>
                 <div class="table-responsive userlist-table">
                     <table class="table table-vcenter text-nowrap mb-0" id="users">
                         <thead>
@@ -62,7 +68,7 @@
                             <input type="text" class="form-control" name="username" placeholder="Username" required />
                         </div>
                     </div>
-                    <div class="form-group row">8
+                    <div class="form-group row">
                         <label for="password" class="col-sm-3 col-form-label">New Password:</label>
                         <div class="col-sm-9">
                             <input type="password" class="form-control" name="password"  placeholder="Enter password"  required/>

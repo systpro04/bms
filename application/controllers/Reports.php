@@ -10,4 +10,11 @@ class Reports extends CI_Controller {
 		$this->load->view('_layouts/footer');
 
 	}
+	public function request()
+	{
+		$this->load->view('_layouts/header');
+		$this->load->view('personnel/request');
+		$this->load->view('_layouts/footer');
+
+	}
 }

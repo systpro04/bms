@@ -1,7 +1,8 @@
 <script>
 $(document).ready(function () {
-    get_user_list();
+ 
 
+    get_user_list();
     function get_user_list() {
         var user = $('#users').DataTable({
             "serverSide": true,
@@ -12,8 +13,7 @@ $(document).ready(function () {
             },
             "columns": [
                 {
-                    "data": "photo",
-                    "render": function(data, type, row) {
+                    render: function(data, type, row) {
                         var image = data ? data : '<?php echo base_url();?>assets/img/faces/11.jpg';
                         return `<img src="${image}" alt="User Photo" class="rounded-circle avatar-md mr-2">`;
                     }
@@ -52,7 +52,6 @@ $(document).ready(function () {
                 show: true
             });
 
-            // Populate the modal fields
             $('#name').val(name);
             $('#username').val(username);
             $('#user_type').val(user_type);
@@ -61,9 +60,7 @@ $(document).ready(function () {
 
         $('#submitForm').on('click', function(e) {
             e.preventDefault();
-
             var formData = $('#createForm').serialize();
-
             $.ajax({
                 url: '<?php echo base_url(); ?>User/create_user',
                 type: 'POST',
@@ -90,9 +87,9 @@ $(document).ready(function () {
             });
         });
 
-
-        $('#edit #update').on('click', function (e) {
+        $('#update').on('click', function (e) {
             e.preventDefault();
+            $('#edit').modal('show');
 
             var id = $('#id').val();
             var name = $('#name').val();

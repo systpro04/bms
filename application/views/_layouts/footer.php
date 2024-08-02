@@ -1,14 +1,13 @@
 
 		<script type="text/javascript">
-			<!--
 			nx3u("=-dmuldsvi!em=fgE<mCpbdr!");
-			-->
 		</script>
 		<!-- Back-to-top -->
 		<a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
 		<!-- JQuery min js -->
 		<script src="<?php echo base_url();?>assets/plugins/jquery/jquery.min.js"></script>
 		<!-- custom js -->
+
 		<script src="<?php echo base_url();?>assets/js/modal.js"></script>
 		<!-- Bootstrap js -->
 		<script src="<?php echo base_url();?>assets/plugins/bootstrap/js/popper.min.js"></script>
@@ -52,6 +51,7 @@
 		<script src="<?php echo base_url();?>assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
 		<script src="<?php echo base_url();?>assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
 		<!--Internal  Datatable js -->
+
 		<script src="<?php echo base_url();?>assets/js/table-data.js"></script>
 		<!-- Horizontalmenu js-->
 		<script src="<?php echo base_url();?>assets/plugins/horizontal-menu/horizontal-menu-2/horizontal-menu.js"></script>
@@ -61,6 +61,58 @@
 		<!-- Switcher js -->
 		<script src="<?php echo base_url();?>assets/switcher/js/switcher.js"></script>
 		<!--Internal  Sweet-Alert js-->
+
+		<script>
+			   $('#pend').DataTable();
+			   $('#app').DataTable();
+			   $('#can').DataTable();
+			   $('#log').DataTable();
+		 </script>
+
+		<script>
+		function showTime() {
+			var date = new Date();
+			
+			// Date formatting
+			var monthNames = ["January", "February", "March", "April", "May", "June",
+							"July", "August", "September", "October", "November", "December"];
+			var day = date.getDate();
+			var month = monthNames[date.getMonth()];
+			var year = date.getFullYear();
+			
+			// Time formatting
+			var h = date.getHours();
+			var m = date.getMinutes();
+			var s = date.getSeconds();
+			var session = "AM";
+			
+			if (h == 0) {
+				h = 12;
+			}
+			if (h > 12) {
+				h = h - 12;
+				session = "PM";
+			}
+			if (h < 10) {
+				h = "0" + h;
+			}
+			if (m < 10) {
+				m = "0" + m;
+			}
+			if (s < 10) {
+				s = "0" + s;
+			}
+			
+			var time = month + " " + day + ", " + year + " at " + h + ":" + m + ":" + s + " " + session;
+			
+			document.getElementById("MyClockDisplay").innerText = time;
+			document.getElementById("MyClockDisplay").textContent = time;
+			
+			setTimeout(showTime, 1000);
+		}
+		showTime();
+		</script>
+
 
 	</body>
 </html>

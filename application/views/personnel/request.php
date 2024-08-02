@@ -1,7 +1,7 @@
 <div class="breadcrumb-header justify-content-between">
     <div class="my-auto">
         <div class="d-flex">
-            <h4 class="content-title mb-0 my-auto">Activity Logs</h4>
+            <h4 class="content-title mb-0 my-auto">Request Logs</h4>
             <span class="text-muted mt-1 tx-13 ml-2 mb-0">/ Index </span>
         </div>
     </div>
@@ -21,7 +21,9 @@
                         <thead>
                             <tr>
                                 <th class="wd-lg-8p"><span>DATE/TIME</span></th>
-                                <th class="wd-lg-20p"><span>ACTION TAKEN</span></th>
+                                <th class="wd-lg-8p"><span>TYPE</span></th>
+                                <th class="wd-lg-8p"><span>REQUEST NUMBER</span></th>
+                                <th class="wd-lg-20p"><span>DETAILS</span></th>
                             </tr>
                         </thead>
                         <tbody>

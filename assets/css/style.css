@@ -7503,10 +7503,17 @@ textarea.custom-file-input.parsley-error:focus~.custom-file-label {
     align-items: stretch;
     width: 100%
 }
+.input-group2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 30%
+}
 
 .input-group>.custom-file,
 .input-group>.custom-select,
-.input-group>.form-control,
+.input-group, .input-group2>.form-control,
 .input-group>.form-control-plaintext {
     position: relative;
     flex: 1 1 auto;

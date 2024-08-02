@@ -12,7 +12,7 @@
                             class="col-md-12 col-lg-12 col-xl-12 my-auto mx-auto wd-100p"
                         >
                             <img
-                                src="<?php echo base_url();?>assets/img/media/login.png"
+                                src="<?php echo base_url();?>assets/img/brand/cas.png"
                                 class="my-auto ht-xl-80p wd-md-100p wd-xl-80p mx-auto"
                                 alt="logo"
                             />
@@ -28,12 +28,7 @@
                                 <div class="col-md-10 col-lg-10 col-xl-9 mx-auto">
                                     <div class="card-sigin">
                                         <div class="mb-5 d-flex">
-                                            <a href="index.html"
-                                                ><img
-                                                    src="<?php echo base_url();?>assets/img/brand/favicon.png"
-                                                    class="sign-favicon ht-40"
-                                                    alt="logo"
-                                            /></a>
+                                            <a href="index.html" ><img src="<?php echo base_url();?>assets/img/brand/favicon.png" class="sign-favicon ht-40" alt="logo"/></a>
                                             <h1 class="main-logo1 ml-1 mr-0 my-auto tx-28">
                                                 Login
                                             </h1>

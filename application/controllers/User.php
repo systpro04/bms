@@ -42,7 +42,7 @@ class User extends CI_Controller
         $password = $this->input->post('password');
         $user_type = $this->input->post('user_type');
 
-        $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+        $hashed_password = hash($password);
 
         $data = [
             'name' => $name,
@@ -77,7 +77,7 @@ class User extends CI_Controller
         );
 
         if (!empty($password)) {
-            $data['password'] = password_hash($password, PASSWORD_BCRYPT);
+            $data['password'] = sha1($password);
         }
 
         $update = $this->User_mod->update_user($id, $data);
